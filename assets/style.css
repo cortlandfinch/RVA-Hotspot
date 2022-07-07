@@ -9,5 +9,14 @@
     background-color: var(--quaternary);
 }
 
+.hero-body {
+    background-image: url(./skyline.jpeg);
+    width: 100vw;
+}
+
+.title, .subtitle {
+    background-color: transparent;
+}
+
 
 
