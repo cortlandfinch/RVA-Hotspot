@@ -14,23 +14,34 @@
 </head>
 <body>
     <header>
-        <h1>
-            <a href="/">RVA Hotspot</a>
-        </h1>
-        <!--Sticky Navigation bar with restaurants,breweries, and contact us-->
-        <nav>
-           <ul>
-            <li>
-                <a href="#food">Food</a>
-            </li>
-            <li>
-                <a href="#booze">Booze</a>
-            </li>
-            <li>
-                <a href="#contact-us">Contact Us</a>
-            </li>
-           </ul>
-        </nav>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+              <a class="navbar-item" src="./assets/RHS Logo.png">
+              </a>
+          
+              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+              </a>
+            </div>
+          
+            <div id="navbarBasicExample" class="navbar-menu">
+              <div class="navbar-start">
+                <a href="#food" class="navbar-item">
+                  Food
+                </a>
+          
+                <a href="#booze" class="navbar-item">
+                  Booze
+                </a>
+          
+                <a href="#contact-us" class="navbar-item">
+                    Contact Us
+                </a>
+                </div>
+            </div>
+          </nav> 
     </header>
     <!--Picture of RVA with a blurb about what our app is for-->
     <hero>
