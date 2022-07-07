@@ -1,5 +1,22 @@
 :root {
-    --primary-color: #B91646;
-    --secondary-color: #FDD67E;
-    --tertiary-color: #81ADC8;
+    --primary: #B91646;
+    --secondary: #FDD67E;
+    --tertiary: #81ADC8;
+    --quaternary: #FBF3E4;
 }
+
+* {
+    background-color: var(--quaternary);
+}
+
+.hero-body {
+    background-image: url(./skyline.jpeg);
+    width: 100vw;
+}
+
+.title, .subtitle {
+    background-color: transparent;
+}
+
+
+
