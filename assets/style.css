@@ -10,8 +10,9 @@
 }
 
 .hero-body {
-    background-image: url(./skyline.jpeg);
-    width: 100vw;
+    background-image: url(./rvawide.jpeg);
+    background-position: 100%;
+    background-repeat: none;
 }
 
 .title, .subtitle {
