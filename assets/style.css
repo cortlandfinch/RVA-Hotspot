@@ -37,3 +37,13 @@
 
 
 
+
+
+a {
+    width: 8em;
+    height: auto;
+  }
+  
+  [hidden] {
+    display: none;
+  }
