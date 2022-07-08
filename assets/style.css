@@ -9,5 +9,24 @@
     background-color: var(--quaternary);
 }
 
+header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
 
 
+
+/* Contact Section CSS Start*/
+.contact-text {
+    background-color: white;
+}
+
+iframe {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
+}
+
+.notification, p {
+    background-color: var(--tertiary);
+}
+/* Contact Section CSS End */
