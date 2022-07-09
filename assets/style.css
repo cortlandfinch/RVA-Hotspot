@@ -5,6 +5,7 @@
     --quaternary: #FBF3E4;
 }
 
+
 * {
     background-color: var(--quaternary);
 }
