@@ -5,9 +5,9 @@
     --quaternary: #FBF3E4;
 }
 
-* {
+/* * {
     background-color: var(--quaternary);
-}
+} */
 
 header {
     position: -webkit-sticky;
@@ -44,8 +44,10 @@ header {
 
 
 /* Contact Section CSS Start*/
-#contact-us 
 
+#contact-us {
+    margin-top: 20px;
+} 
 iframe {
     box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
 }
