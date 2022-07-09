@@ -18,15 +18,22 @@ header {
 
 
 /* Contact Section CSS Start*/
-.contact-text {
-    background-color: white;
-}
+#contact-us 
 
 iframe {
     box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
 }
 
-.notification, p {
+.contact-content, p {
+    background-color: var(--primary);
+    color: white;
+}
+
+.contact-map {
+    background-color: var(--secondary);
+}
+
+.contact-form {
     background-color: var(--tertiary);
 }
 /* Contact Section CSS End */
