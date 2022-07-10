@@ -13,7 +13,24 @@
 .hero-body {
     background-image: url(./rvaskylinewide.jpeg);
     background-size:100%;
-    /* background-position: center; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.hero-logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    border-radius:10in;
+    max-width: 20%;
+    max-height: 20%;
 }
 
 .title {
