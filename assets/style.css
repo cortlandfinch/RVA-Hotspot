@@ -6,7 +6,7 @@
 }
 
 
-* {
+body, .navbar {
     background-color: var(--quaternary);
 }
 
