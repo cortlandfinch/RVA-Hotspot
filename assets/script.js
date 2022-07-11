@@ -15,3 +15,5 @@ $filters.on("click", "a", function(e) {
 
   $(this).addClass("active");
 });
+
+//  script for form submission
