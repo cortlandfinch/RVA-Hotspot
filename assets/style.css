@@ -65,5 +65,7 @@ a {
   /* Footer Styles Start */
 .footer {
     background-color: var(--quaternary);
+    width: 100%;
+    margin-top: 20px;
 }
   /* Footer Styles End */
