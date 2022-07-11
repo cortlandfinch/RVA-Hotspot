@@ -47,7 +47,20 @@ header {
 
 #contact-us {
     margin-top: 20px;
-} 
+}
+
+.bg-img {
+    background-image: url(./rva_downtown.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.contact-title {
+    color: white;
+}
+
 iframe {
     box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
 }
