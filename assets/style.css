@@ -53,10 +53,6 @@ body, .navbar {
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
-
-
-
-
 a {
     width: 8em;
     height: auto;
@@ -65,3 +61,9 @@ a {
   [hidden] {
     display: none;
   }
+
+  /* Footer Styles Start */
+.footer {
+    background-color: var(--quaternary);
+}
+  /* Footer Styles End */
