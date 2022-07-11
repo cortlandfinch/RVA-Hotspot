@@ -53,10 +53,6 @@ body, .navbar {
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
-
-
-
-
 a {
     width: 8em;
     height: auto;
@@ -65,3 +61,23 @@ a {
   [hidden] {
     display: none;
   }
+
+#breweries {
+  background: url(https://therealbarman.com/wp-content/uploads/2018/08/Bar-Background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+
+}
+
+.bg_carousel {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 6rem;
+}

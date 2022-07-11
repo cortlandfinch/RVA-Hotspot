@@ -15,3 +15,11 @@ $filters.on("click", "a", function(e) {
 
   $(this).addClass("active");
 });
+
+bulmaCarousel.attach('#slider', {
+  slidesToScroll: 1,
+  slidesToShow: 1,
+  infinite: true,
+  autoplay: true,
+  pauseonhover: true,
+});
