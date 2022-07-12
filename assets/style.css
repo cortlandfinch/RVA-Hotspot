@@ -22,7 +22,24 @@ body, .navbar {
 .hero-body {
     background-image: url(./rvaskylinewide.jpeg);
     background-size:100%;
-    /* background-position: center; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.hero-logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    border-radius:10in;
+    max-width: 20%;
+    max-height: 20%;
 }
 
 .title {
@@ -45,10 +62,6 @@ body, .navbar {
     unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
-
-
-
-
 a {
     width: 8em;
     height: auto;
@@ -57,3 +70,11 @@ a {
   [hidden] {
     display: none;
   }
+
+  /* Footer Styles Start */
+.footer {
+    background-color: var(--quaternary);
+    width: 100%;
+    margin-top: 20px;
+}
+  /* Footer Styles End */
