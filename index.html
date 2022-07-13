@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--open brewery API-->
-    <link href="https://api.openbrewerydb.org/breweries?by_city=richmond&per_page=8">
+    <link href="https://api.openbrewerydb.org/breweries?by_state=virginia&by_city=richmond&per_page=6">
 
     <!-- email verification API -->
   
     <!--random food generator-->
+<<<<<<< HEAD
 
+=======
+    <link href="https://foodish-api.herokuapp.com/api/images/:food">
+    <!--Our style sheet-->
+    <link href="./assets/style.css" rel="stylesheet">
+>>>>>>> develop
     <!--Google Fonts: Bad+Script=decorative cursive, Roboto+Condensed=bold font for titles, Lato=regular text-->
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:wght@300&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <!--Bulma for styling -->
@@ -21,31 +27,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" crossorigin="anonymous"></script>
     <!--JavaScript Reference Sheet-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" crossorigin="anonymous"></script>
-    <!--Our style sheet-->
-    <link href="./assets/style.css" rel="stylesheet">
+      <!--Bulma styling-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
+    <!--Carousel style sheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <!--JavaScript Carousel code-->
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
     <title>RVA Hotspot</title>
 </head>
 <body>
     <header>
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-              <img class="navbar-item" src="./assets/RHS Logo.png" width="112" height="28">
+              <img class="navbar-item" src="./assets/logo white.png" width="112" height="28">
             </img>
-          
-              <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-              </a>
-            </div>
-          
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start">
-                <a href="#food" class="navbar-item">
+                <a href="#restaurants" class="navbar-item">
                   Food
                 </a>
           
-                <a href="#booze" class="navbar-item">
+                <a href="#breweries" class="navbar-item">
                   Booze
                 </a>
           
@@ -60,13 +62,15 @@
     <hero>
         <section class="hero is-medium is-link">
             <div class="hero-body">
-              <img class="hero-logo" src="./assets/Hungry We've got your bACK!.png"></img>
+              <img class="hero-logo" src="./assets/hero logo white.png"></img>
             </div>
           </section>
     </hero>
 
     <!--Restaurants with buttons and randomizer-->
     <div id="restaurants">
+      <h1 class="food-title title is-1 has-text-centered">FOOD & BREWERIES</h1>
+      <h2 class="food-subtitle subtitle is-4 has-text-centered"> Reccomendations from Local Richmonders!</h2>
       <div class="filters field is-grouped-multiline is-centered">
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
@@ -679,9 +683,79 @@
 
     <!--Breweries with buttons and randomizer-->
     <div id="breweries">
+      <section class="section">
+        <div class="container is-clipped">
+          <div id="slider">
+            <div class="bg_carousel" id="brew1">
+              <div class="card-content">
+                <div class="item__title">
+                  RVA Breweries
+                </div>
+                <div class="item__description">
+                  9812 Flat Iron Road, Richmond VA
+                </div>
+              </div>
+            </div>
 
+            <div class="bg_carousel" id="brew2">
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 2
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg_carousel" id="brew3">
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 3
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg_carousel" id="brew4">
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 4
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg_carousel" id="brew5">
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 5
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+            <div class="bg_carousel" id="brew6">
+              <div class="card-content">
+                <div class="item__title">
+                  Mon titre 6
+                </div>
+                <div class="item__description">
+                  Ici une petite description pour tester le slider
+                </div>
+              </div>
+            </div>
+  
+          </div>
+        </div>
+      </section>
     </div>
-
 
     <!--contact us section-->
     <section id="contact-us" class="section bg-img">
@@ -766,7 +840,7 @@
     </section>
 
     <!--Our JavaScript page-->
-    <script src="./assets/script.js"></script>
+    <script defer src="./assets/script.js"></script>
 </body>
 
 
