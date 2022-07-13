@@ -110,7 +110,7 @@ a {
   background: url(https://therealbarman.com/wp-content/uploads/2018/08/Bar-Background.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   height: 500px;
 
