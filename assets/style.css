@@ -95,7 +95,7 @@ a {
 }
   /* Footer Styles Start */
 .footer {
-    background-color: var(--quaternary);
+    background-color: white;
     width: 100%;
     margin-top: 20px;
 }
