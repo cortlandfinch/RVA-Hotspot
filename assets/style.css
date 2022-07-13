@@ -5,18 +5,130 @@
     --quaternary: #FBF3E4;
 }
 
-* {
-    background-color: var(--quaternary);
+.navbar-item {
+        font-family: 'Lato', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USSwaPGQ3q5d0N7w.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+
 }
 
 .hero-body {
-    background-image: url(./skyline.jpeg);
-    width: 100vw;
+    background-image: url(./rvaskylinewide.jpeg);
+    background-size:100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment:scroll;
 }
 
-.title, .subtitle {
+.hero-logo{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+    border-radius:10in;
+    max-width: 20%;
+    max-height: 20%;
+}
+
+.title {
+font-family: 'Roboto Condensed', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCkYb9lecyVC4A.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+
+.subtitle {
     background-color: transparent;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-style: normal;
+    font-weight:lighter;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCkYb9lecyVC4A.woff2) format('woff2');
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
+/* Contact Section CSS Start*/
 
+#contact-us {
+    margin-top: 20px;
+}
 
+.bg-img {
+    background-image: url(./rva_downtown.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+iframe {
+    box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
+}
+
+.contact-content {
+    background-color: var(--primary);
+    color: white;
+}
+
+.contact-map {
+    background-color: var(--secondary);
+}
+
+.contact-form {
+    background-color: var(--tertiary);
+}
+/* Contact Section CSS End */
+
+.filters {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    
+}
+
+a {
+    width: 8em;
+    height: auto;
+  }
+  
+  [hidden] {
+    display: none;
+  }
+
+#breweries {
+  background: url(https://therealbarman.com/wp-content/uploads/2018/08/Bar-Background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 500px;
+
+}
+
+.bg_carousel {
+  background-color: rgba(255, 255, 255, 0);
+  color: white;
+  max-width: 100%;
+  position: relative;
+  text-align: center;
+  font-size: xx-large;
+  margin-top: 6rem;
+}
+  /* Footer Styles Start */
+.footer {
+    background-color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+  /* Footer Styles End */
