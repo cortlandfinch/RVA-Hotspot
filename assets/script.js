@@ -24,26 +24,6 @@ bulmaCarousel.attach('#slider', {
   pauseonhover: true,
 });
 
-// var url = "https://api.openbrewerydb.org/breweries?by_state=virginia&by_city=richmond&per_page=6"
-
-// function getData(url) {
-//   fetch(url)
-//     .then(function (res) {
-//       return res.json();
-
-//     })
-//     .catch (function (err) {
-//         console.log(err);
-//     })
-//   }
-//   getData(url);
-
-//   for (i=0; i<6; i++) {
-//     //for each
-//     var item = [i];
-//     //[i] display name, address
-//   }
-
 var brewery_url = 'https://api.openbrewerydb.org/breweries?by_state=virginia&by_city=richmond&per_page=6'
 
 function getBrew() {
