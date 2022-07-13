@@ -16,10 +16,6 @@ $filters.on("click", "a", function(e) {
   $(this).addClass("active");
 });
 
-<<<<<<< HEAD
-//  script for form email verification submission
-
-=======
 bulmaCarousel.attach('#slider', {
   slidesToScroll: 1,
   slidesToShow: 1,
@@ -97,4 +93,3 @@ brew6.innerHTML = `<div class="bg_carousel" id="brew6">
   });
 }
 getBrew();
->>>>>>> develop

@@ -5,19 +5,6 @@
     --quaternary: #FBF3E4;
 }
 
-<<<<<<< HEAD
-body, .navbar {
-    background-color: var(--quaternary);
-} */
-
-header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-}
-
-=======
->>>>>>> develop
 .navbar-item {
         font-family: 'Lato', sans-serif;
         font-style: normal;
@@ -69,9 +56,6 @@ font-family: 'Roboto Condensed', sans-serif;
     unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
 
-<<<<<<< HEAD
-
-
 /* Contact Section CSS Start*/
 
 #contact-us {
@@ -86,15 +70,11 @@ font-family: 'Roboto Condensed', sans-serif;
     background-size: cover;
 }
 
-.contact-title {
-    color: white;
-}
-
 iframe {
     box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
 }
 
-.contact-content, p {
+.contact-content {
     background-color: var(--primary);
     color: white;
 }
@@ -108,8 +88,6 @@ iframe {
 }
 /* Contact Section CSS End */
 
-
-=======
 .filters {
     display: flex;
     justify-content: center;
@@ -119,7 +97,6 @@ iframe {
     
 }
 
->>>>>>> develop
 a {
     width: 8em;
     height: auto;
