@@ -93,3 +93,5 @@ brew6.innerHTML = `<div class="bg_carousel" id="brew6">
   });
 }
 getBrew();
+
+// save form to local storage
