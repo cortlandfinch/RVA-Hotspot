@@ -25,7 +25,7 @@ bulmaCarousel.attach('#slider', {
 });
 
 var brewery_url = 'https://api.openbrewerydb.org/breweries?by_state=virginia&by_city=richmond&per_page=6'
-//function to get the brewery information from the open brewery api
+//function to get the brewery information from the open brewery api, it receives the command-line arguments and inserts them in a HTML template literal
 function getBrew() {
   fetch(brewery_url)
   .then(res => res.json())
