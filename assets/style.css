@@ -63,6 +63,7 @@ font-family: 'Roboto Condensed', sans-serif;
 #contact-us {
     margin-top: 20px;
 }
+
 /*background image in contact section*/
 .bg-img {
     background-image: url(./rva_downtown.jpeg);
@@ -82,7 +83,18 @@ iframe {
 }
 /*background color behind map*/
 .contact-map {
-    background-color: var(--secondary);
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.contact-map iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
 }
 
 .contact-form {

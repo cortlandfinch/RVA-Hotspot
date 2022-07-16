@@ -783,8 +783,8 @@
         <div class="columns">
           <div class="column">
             <!--embedded google map of richmond that users can click on to receive directions-->
-            <div class="notification contact-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101257.30763910433!2d-77.5633009818467!3d37.524640270135386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b111095799c9ed%3A0xbfd83e6de2423cc5!2sRichmond%2C%20VA!5e0!3m2!1sen!2sus!4v1657287381121!5m2!1sen!2sus" width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="notification contact-map is-16by9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101257.30763910433!2d-77.5633009818467!3d37.524640270135386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b111095799c9ed%3A0xbfd83e6de2423cc5!2sRichmond%2C%20VA!5e0!3m2!1sen!2sus!4v1657287381121!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <div class="column">
@@ -844,11 +844,6 @@
                     <button class="button is-link">Submit</button>
                   </div>
                 </div>
-                <div class="field">
-                  <div class="control">
-                    <button id="saveBtn" class="button saveBtn">Save</button>
-                  </div>
-                </div>
               </div>
               </form>
           </div>
@@ -856,6 +851,13 @@
       </div>
     </section>
 
+    <!-- Save text area input to local Storage -->
+    <script>
+    message.value = localStorage.getItem('message');
+    message.oninput = () => {
+       localStorage.setItem('message', message.value)
+    };
+    </script>
     <!--Our JavaScript page-->
     <script defer src="./assets/script.js"></script>
 </body>
