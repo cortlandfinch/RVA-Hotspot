@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- email verification API -->
+    <link rel="stylesheet" href="https://formsubmit.co/api/get-submissions/2e1400a4abe53f4e73297b1a407a59b0b8e8e7599c47e656af7f69e68258e44b">
     <!--open brewery API-->
     <link href="https://api.openbrewerydb.org/breweries?by_state=virginia&by_city=richmond&per_page=6">
-
-    <!-- email verification API -->
-  
-    <!--random food generator-->
-    <link href="https://foodish-api.herokuapp.com/api/images/:food">
     <!--Google Fonts: Bad+Script=decorative cursive, Roboto+Condensed=bold font for titles, Lato=regular text-->
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:wght@300&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <!--Bulma for styling -->
@@ -33,12 +30,14 @@
 </head>
 <body>
     <header>
+        <!--Nav bar from bulma-->
         <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
               <img class="navbar-item" src="./assets/logo white.png" width="112" height="28">
             </img>
             <div id="navbarBasicExample" class="navbar-menu">
               <div class="navbar-start">
+                <!--hrefs link these nav buttons to each section-->
                 <a href="#restaurants" class="navbar-item">
                   Food
                 </a>
@@ -54,10 +53,11 @@
             </div>
           </nav> 
     </header>
-    <!--Picture of RVA with a blurb about what our app is for-->
     <hero>
+        <!-- hero styling from bulma- mb-5 gives a margin at the bottom between the hero and the next section-->
         <section class="hero is-medium is-link mb-5">
             <div class="hero-body">
+              <!-- centered logo on hero with "Hungry? We've got your back!"-->
               <img class="hero-logo" src="./assets/hero logo white.png"></img>
             </div>
           </section>
@@ -65,63 +65,75 @@
 
     <!--Restaurants with buttons and randomizer-->
     <div id="restaurants">
+      <!--title and subtitle for food sections-->
       <h1 class="food-title title is-1 has-text-centered">FOOD & BREWERIES</h1>
       <h2 class="food-subtitle subtitle is-4 has-text-centered"> Recommendations from Local Richmonders!</h2>
+      <!--below are the buttons for each restaurant type-->
       <div class="filters field is-grouped-multiline is-centered mb-5">
+          <!--burgers button-->
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-burger"></i>
             </span>
             <a href="#content1">Burgers</a>
           </button>
+           <!--pizza button-->
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-pizza-slice"></i>
             </span>
             <a href="#content2">Pizza</a>
-          </button>          
+          </button>  
+          <!--italian button-->        
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-wheat-awn"></i>
             </span>
             <a href="#content3">Italian</a>
-          </button>          
+          </button> 
+          <!--budget button-->         
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-seedling"></i>
             </span>
             <a href="#content4">Local on a Budget</a>
-          </button>          
+          </button> 
+          <!--splurge button-->         
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-dollar"></i>
             </span>
             <a href="#content5">Local Splurge Spot</a>
-          </button>          
+          </button>  
+          <!--soul food button-->        
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-drumstick-bite"></i>
             </span>
             <a href="#content6">Soul Food</a>
-          </button>          
+          </button>
+          <!--asian button-->          
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-pepper-hot"></i>
             </span>
             <a href="#content7">Asian</a>
-          </button>          
+          </button> 
+          <!--tacos button-->         
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-bowl-food"></i>
             </span>
             <a href="#content8">Tacos and More</a>
           </button>
+          <!--diners button-->
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-martini-glass"></i>
             </span>
             <a href="#content9">Diners</a>
           </button>
+          <!--food trucks button-->
           <button class="button is-large is-warning" style="margin: 4px;">
             <span class="icon is-large">
               <i class="fa-solid fa-apple-whole"></i>
@@ -129,9 +141,11 @@
             <a href="#content10">Food Trucks</a>
           </button>
       </div>
-  </div><!-- end filters-->
+  </div><!-- end buttons-->
   
+  <!-- below is the content for each of the restaurant sections. These will appear when the buttons are clicked. Each card contains a picture, name of restaurant(with a link to their website), address, and must try dish-->
   <div class="content" id="content1" hidden>
+    <!--burger restaurant info-->
     <div class="card">
       <div class="card-content">
         <div class="media">
@@ -187,7 +201,7 @@
       </div>
     </div>
   </div>
-
+   <!--pizza restaurant info-->
   <div class="content" id="content2" hidden>
     <div class="card">
       <div class="card-content">
@@ -243,7 +257,7 @@
       </div>
     </div>
   </div>
-
+   <!--pasta restaurant info-->
   <div class="content" id="content3" hidden>
     <div class="card">
       <div class="card-content">
@@ -298,7 +312,7 @@
       </div>
     </div>
   </div>
-
+   <!--budget restaurant info-->
   <div class="content" id="content4" hidden>
     <div class="card">
       <div class="card-content">
@@ -352,7 +366,7 @@
       </div>
     </div>
   </div>
-
+   <!--splurge restaurant info-->
   <div class="content" id="content5" hidden>
     <div class="card">
       <div class="card-content">
@@ -406,7 +420,7 @@
       </div>
     </div>
   </div>
-
+   <!--soul food restaurant info-->
   <div class="content" id="content6" hidden>
     <div class="card">
       <div class="card-content">
@@ -460,7 +474,7 @@
       </div>
     </div>
   </div>
-
+   <!--Asian restaurant info-->
   <div class="content" id="content7" hidden>
     <div class="card">
       <div class="card-content">
@@ -514,7 +528,7 @@
       </div>
     </div>
   </div>
-
+   <!--taco restaurant info-->
   <div class="content" id="content8" hidden>
     <div class="card">
       <div class="card-content">
@@ -568,7 +582,7 @@
       </div>
     </div>
   </div>
-
+   <!--diner restaurant info-->
   <div class="content" id="content9" hidden>
     <div class="card">
       <div class="card-content">
@@ -622,7 +636,7 @@
       </div>
     </div>
   </div>
-
+   <!--food truck info-->
   <div class="content" id="content10" hidden>
     <div class="card">
       <div class="card-content">
@@ -677,7 +691,7 @@
     </div>
   </div>
 
-    <!--Breweries with buttons and randomizer-->
+    <!--Breweries populated using the open brewery api, presented on a carousel that scrolls through options automatically. The carousel will stop when you hover over it.-->
     <div id="breweries">
       <section class="section">
         <div class="container is-clipped">
@@ -768,13 +782,15 @@
         </div>
         <div class="columns">
           <div class="column">
+            <!--embedded google map of richmond that users can click on to receive directions-->
             <div class="notification contact-map">
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101257.30763910433!2d-77.5633009818467!3d37.524640270135386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b111095799c9ed%3A0xbfd83e6de2423cc5!2sRichmond%2C%20VA!5e0!3m2!1sen!2sus!4v1657287381121!5m2!1sen!2sus" width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <div class="column">
+            <!--contact form that will be sent to rvahotspot gmail account-->
             <div class="notification contact-form">
-              <form id="user-form" action="https://formsubmit.co/507720cf98c819d1715e16c318ee974f" method="POST" name="contact_form">
+              <form id="user-form" action="https://formsubmit.co/507720cf98c819d1715e16c318ee974f" method="POST" name="_captcha" value="false" type="hidden">
                 <div class="field">
                   <label class="label">Name</label>
                   <div class="control has-icons-left has-icons-right">
@@ -800,7 +816,7 @@
                     </span>
                   </div>
                 </div>
-  
+                <!--user can click on a drop down box to let the creaters know the subject of their request-->
                 <div class="field">
                   <label class="label">Subject</label>
                   <div class="control">
@@ -826,6 +842,10 @@
                 <div class="field">
                   <div class="control">
                     <button class="button is-link">Submit</button>
+                  </div>
+                </div>
+                <div class="field">
+                  <div class="control">
                     <button id="saveBtn" class="button saveBtn">Save</button>
                   </div>
                 </div>
@@ -840,7 +860,7 @@
     <script defer src="./assets/script.js"></script>
 </body>
 
-
+<!--footer with name of company, creator names, and email address-->
 <footer class="footer">
   <div class="content has-text-centered">
     <p>

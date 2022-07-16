@@ -1,13 +1,13 @@
 var $filters = $(".filters");
 var $content = $(".content");
-
+//allows the user to interact with the restaurant buttons with a click
 $filters.on("click", "a", function(e) {
   e.preventDefault();
 
   var id = $(this).attr("href");
 
   $content.filter(":not([hidden])").attr("hidden", true);
-
+//a 3 second fade in happens when the buttons are clicked which will display the restaurant info
   TweenMax.from(id, 3, {autoAlpha: 0});
   $(id).removeAttr("hidden");
 
@@ -15,7 +15,7 @@ $filters.on("click", "a", function(e) {
 
   $(this).addClass("active");
 });
-
+//allows the carousel to scroll through breweries one at a time automatically and to pause when the mouse is hovered on that section
 bulmaCarousel.attach('#slider', {
   slidesToScroll: 1,
   slidesToShow: 1,
@@ -25,7 +25,7 @@ bulmaCarousel.attach('#slider', {
 });
 
 var brewery_url = 'https://api.openbrewerydb.org/breweries?by_state=virginia&by_city=richmond&per_page=6'
-
+//function to get the brewery information from the open brewery api, it receives the command-line arguments and inserts them in a HTML template literal
 function getBrew() {
   fetch(brewery_url)
   .then(res => res.json())

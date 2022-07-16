@@ -1,10 +1,12 @@
+/*color scheme used throughout the page*/
 :root {
     --primary: #B91646;
     --secondary: #FDD67E;
     --tertiary: #81ADC8;
-    --quaternary: #FBF3E4;
+    --quaternary: white;
 }
 
+/*styles the nav bar and adds the RVA Hotspot logo*/
 .navbar-item {
         font-family: 'Lato', sans-serif;
         font-style: normal;
@@ -15,6 +17,7 @@
 
 }
 
+/*main image customer will be greeted with*/
 .hero-body {
     background-image: url(./rvaskylinewide.jpeg);
     background-size:100%;
@@ -24,7 +27,7 @@
     align-items: flex-start;
     background-attachment:scroll;
 }
-
+/*rva hotspot logo centered on the hero image*/
 .hero-logo{
     display: flex;
     justify-content: center;
@@ -36,7 +39,7 @@
     max-width: 20%;
     max-height: 20%;
 }
-
+/*title that describes the following sections*/
 .title {
 font-family: 'Roboto Condensed', sans-serif;
   font-style: normal;
@@ -45,7 +48,7 @@ font-family: 'Roboto Condensed', sans-serif;
   src: url(https://fonts.gstatic.com/s/robotocondensed/v25/ieVi2ZhZI2eCN5jzbjEETS9weq8-32meGCkYb9lecyVC4A.woff2) format('woff2');
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-
+/*subtitle that describes the food and booze sections*/
 .subtitle {
     background-color: transparent;
     font-family: 'Roboto Condensed', sans-serif;
@@ -57,19 +60,18 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 
 /* Contact Section CSS Start*/
-
 #contact-us {
     margin-top: 20px;
 }
-
+/*background image in contact section*/
 .bg-img {
     background-image: url(./rva_downtown.jpeg);
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-size: cover;
 }
-
+/*google map in contact section*/
 iframe {
     box-shadow: rgba(0, 0, 0, 0.5) 0 8px 15px;
 }
@@ -78,7 +80,7 @@ iframe {
     background-color: var(--primary);
     color: white;
 }
-
+/*background color behind map*/
 .contact-map {
     background-color: var(--secondary);
 }
@@ -88,6 +90,7 @@ iframe {
 }
 /* Contact Section CSS End */
 
+/*styling for each restuant button*/
 .filters {
     display: flex;
     justify-content: center;
@@ -96,7 +99,7 @@ iframe {
     background-attachment: fixed;
     
 }
-
+/*styling for the names on each "filter" button*/
 a {
     width: 8em;
     height: auto;
@@ -105,7 +108,7 @@ a {
   [hidden] {
     display: none;
   }
-
+/*background image for carousel that displays the breweries*/
 #breweries {
   background: url(https://therealbarman.com/wp-content/uploads/2018/08/Bar-Background.png);
   background-position: center;
@@ -115,7 +118,7 @@ a {
   height: 500px;
 
 }
-
+/*styling for the carousel*/
 .bg_carousel {
   background-color: rgba(255, 255, 255, 0);
   color: white;
@@ -131,4 +134,4 @@ a {
     width: 100%;
     margin-top: 20px;
 }
-  /* Footer Styles End */
+
