@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- email verification API -->
+    <link rel="stylesheet" href="https://formsubmit.co/api/get-submissions/2e1400a4abe53f4e73297b1a407a59b0b8e8e7599c47e656af7f69e68258e44b">
     <!--open brewery API-->
     <link href="https://api.openbrewerydb.org/breweries?by_state=virginia&by_city=richmond&per_page=6">
-
-    <!-- email verification API -->
-  
     <!--Google Fonts: Bad+Script=decorative cursive, Roboto+Condensed=bold font for titles, Lato=regular text-->
     <link href="https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:wght@300&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
     <!--Bulma for styling -->
@@ -32,27 +31,35 @@
 <body>
     <header>
         <!--Nav bar from bulma-->
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <img class="navbar-item" src="./assets/logo white.png" width="112" height="28">
-            </img>
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <!--hrefs link these nav buttons to each section-->
-                <a href="#restaurants" class="navbar-item">
-                  Food
-                </a>
-          
-                <a href="#breweries" class="navbar-item">
-                  Booze
-                </a>
-          
-                <a href="#contact-us" class="navbar-item">
-                    Contact Us
-                </a>
-                </div>
-            </div>
-          </nav> 
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a href="https://rockwoodc.github.io/RVA-Hotspot/">
+      <img src="./assets/logo white.png" width="112" height="28">
+    </a>
+
+    <a id="burger" class="navbar-burger" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="nav-links" class="navbar-menu">
+    <div class="navbar-end">
+      <a href="#restaurants" class="navbar-item">
+        Food
+      </a>
+
+      <a href="#breweries" class="navbar-item">
+        Booze
+      </a>
+
+      <a href="#contact-us" class="navbar-item">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</nav>
     </header>
     <hero>
         <!-- hero styling from bulma- mb-5 gives a margin at the bottom between the hero and the next section-->
@@ -432,7 +439,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Mama J's</p>
+            <p class="title is-4"><a href="http://mamajskitchen.com/" target="_blank">Mama J's</a></p>
             <p class="subtitle is-6">415 N 1st St., Richmond, VA 23219</p>
             <p class="">Family owned, black owned restaurant located in historic Jackson Ward.</p>
             <p class="">Must Try: Catfish dinner</p>
@@ -449,7 +456,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Big Herm's</p>
+            <p class="title is-4"><a href="https://www.bighermscatering.com/" target="_blank">Big Herm's</a></p>
             <p class="subtitle is-6">315 N 2nd St, Richmond, VA 23219</p>
             <p class="">Black-owned southern take-out spot.</p>
             <p class="">Must Try Dish: Southern Fried Wings</p>
@@ -466,7 +473,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Lillie Pearl</p>
+            <p class="title is-4"><a href="https://lilliepearlrva.com/" target="_blank">Lillie Pearl</a></p>
             <p class="subtitle is-6">416 E Grace St., Richmond, VA 23219</p>
             <p class="">Black-owned restaurant serving you impeccable southern dishes and giving you great hospitality experience.</p>
             <p class="">Must Try Dish: Fried Chicken Sandwich Combo</p>
@@ -486,7 +493,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Peter Chang's</p>
+            <p class="title is-4"><a href="http://peterchangrestaurant.com/" target="_blank">Peter Chang</a></p>
             <p class="subtitle is-6">2816 W Broad St A, Richmond, VA 23230</p>
             <p class="">Award winning chef Peter Chang brings traditional Szechuan cuisine to the heart of RVA. With family style dishes and great appetizers, there is something for everyone to enjoy.</p>
             <p class="">Must Try Dish: Pan fried pork dumplings ad dried fried eggplant</p>
@@ -503,7 +510,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">My Noodle & Bar</p>
+            <p class="title is-4"><a href="https://my-noodle-bar.com/" target="_blank">My Noodle & Bar</a></p>
             <p class="subtitle is-6">1600 Monument Ave, Richmond, VA 23220</p>
             <p class="">Thai restaurant in bar established in 2013 serving you quality meals and delicacies.</p>
             <p class="">Must Try Dish: Drunken Noodles</p>
@@ -520,7 +527,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Sabai</p>
+            <p class="title is-4"><a href="https://www.sabairva.com/" target="_blank">Sabai</a></p>
             <p class="subtitle is-6">2727 W Broad St, Richmond, VA 23220</p>
             <p class="">Thai restaurant which incorprates design from Artist, Brandon Pearson. Sabai serves you authentic dishes and delicacies from the streets of Bangkok.</p>
             <p class="">Must Try Dish: Pad Thai</p>
@@ -540,7 +547,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Y Tu Mama</p>
+            <p class="title is-4"><a href="https://ytumama.com/" target="_blank">Y Tu Mama</a></p>
             <p class="subtitle is-6">4910 Forest Hill Ave, Richmond, VA 23225</p>
             <p class="">This Mexican food spot is inside of The Veil Brewing company. They have great food to go along with delicious Veil beer. </p>
             <p class="">Must Try Dish: Quesobarria Tacos</p>
@@ -557,7 +564,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">TBT El Gallo</p>
+            <p class="title is-4"><a href="https://www.tbtelgallo.com/" target="_blank">TBT El Gallo</a></p>
             <p class="subtitle is-6">2118 W Cary St, Richmond, VA 23220</p>
             <p class="">Quirky counter-serve dishing up creative Mexican street food in a compact space.</p>
             <p class="">Must Try Dish:  Birria tacos</p>
@@ -574,7 +581,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Soul Taco</p>
+            <p class="title is-4"><a href="https://www.soultacorva.com/" target="_blank">Soul Taco</a></p>
             <p class="subtitle is-6">321 N 2nd St, Richmond, VA 23219</p>
             <p class="">Black owned taco restaurant located in RVA and soon to be Raleigh, NC, bringing you a mix of Latin, American, and Southern flavors.</p>
             <p class="">Must Try Dish: Buttermilk Battered Fried Chicken Taco</p>
@@ -594,7 +601,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Joe's Inn</p>
+            <p class="title is-4"><a href="https://www.joesinn.com/" target="_blank">Joe's Inn</a></p>
             <p class="subtitle is-6">205 N Shields Ave, Richmond, VA 23220</p>
             <p class="">Retro eatery opened in 1952 known for its broad comfort-food menu, vintage vibe & adjacent bar.</p>
             <p class="">Must Try Dish: Spaghetti A La Greek</p>
@@ -611,7 +618,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Village Cafe</p>
+            <p class="title is-4"><a href="https://www.facebook.com/VillageCafeRVA/" target="_blank">The Village Cafe</a></p>
             <p class="subtitle is-6">1001 W Grace St, Richmond, VA 23220</p>
             <p class="">Funky local institution since 1956 for eclectic comfort fare & an offbeat mix of characters.</p>
             <p class="">Must Try Dish: Fried Provolone Sandwich</p>
@@ -628,7 +635,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">3 Monkeys</p>
+            <p class="title is-4"><a href="https://3monkeysfan.com/" target="_blank">3 Monkeys Bar & Grill</a></p>
             <p class="subtitle is-6">2524 W Main St, Richmond, VA 23220</p>
             <p class="">Greek fare plus sandwiches & pizza are offered in a stylish tavern space with a bar & patio.</p>
             <p class="">Must Try Dish: Shrimp & Chorizo Po Boy3</p>
@@ -648,7 +655,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Eat my Eggroll</p>
+            <p class="title is-4"><a href="https://eatmyeggroll.com/" target="_blank">Eat My Eggroll</a></p>
             <p class="subtitle is-6"><a href= "https://eatmyeggroll.com/">Check link for address!</a></p>
             <p class="">Egg Roll Shake Shop. Big Dope Egg Rolls & other things you can bite. Ultimate Munchie Truck.</p>
             <p class="">Must Try Dish: Avocado fries</p>
@@ -665,7 +672,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Taqueria Panchito</p>
+            <p class="title is-4"><a href="https://www.facebook.com/panchitorva/" target="_blank">Taqueria Panchito</a></p>
             <p class="subtitle is-6"><a href= "https://www.facebook.com/panchitorva">Visit Facebook</a> for current location or visit their brick and mortar at 6531 Midlothian Tpke, Richmond, VA 23225</p>
             <p class="">No fuss, authentic Mexican food.</p>
             <p class="">Must Try Dish: Al pastor tacos</p>
@@ -682,7 +689,7 @@
             </figure>
           </div>
           <div class="media-content">
-            <p class="title is-4">Intergalactic Tacos</p>
+            <p class="title is-4"><a href="https://intergalactictacos.square.site/" target="_blank">Intergalactic Tacos</a></p>
             <p class="subtitle is-6"><a href="https://www.instagram.com/intergalactictacos/?hl=en">Instagram</a></p>
             <p class="">Solid Mexican fusion food with classic and inventive food, updated regularly.</p>
             <p class="">Must Try Dish:  Get a space box to try multiple tacos and their sauces. Don’t forget to add a side of queso!
@@ -784,14 +791,14 @@
         <div class="columns">
           <div class="column">
             <!--embedded google map of richmond that users can click on to receive directions-->
-            <div class="notification contact-map">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101257.30763910433!2d-77.5633009818467!3d37.524640270135386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b111095799c9ed%3A0xbfd83e6de2423cc5!2sRichmond%2C%20VA!5e0!3m2!1sen!2sus!4v1657287381121!5m2!1sen!2sus" width="650" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="notification contact-map is-16by9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101257.30763910433!2d-77.5633009818467!3d37.524640270135386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b111095799c9ed%3A0xbfd83e6de2423cc5!2sRichmond%2C%20VA!5e0!3m2!1sen!2sus!4v1657287381121!5m2!1sen!2sus" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
           <div class="column">
             <!--contact form that will be sent to rvahotspot gmail account-->
             <div class="notification contact-form">
-              <form id="user-form" action="https://formsubmit.co/507720cf98c819d1715e16c318ee974f" method="POST" name="contact_form">
+              <form id="user-form" action="https://formsubmit.co/507720cf98c819d1715e16c318ee974f" method="POST" name="_captcha" value="false" type="hidden">
                 <div class="field">
                   <label class="label">Name</label>
                   <div class="control has-icons-left has-icons-right">
@@ -843,7 +850,6 @@
                 <div class="field">
                   <div class="control">
                     <button class="button is-link">Submit</button>
-                    <button id="saveBtn" class="button saveBtn">Save</button>
                   </div>
                 </div>
               </div>
@@ -853,6 +859,13 @@
       </div>
     </section>
 
+    <!-- Save text area input to local Storage -->
+    <script>
+    message.value = localStorage.getItem('message');
+    message.oninput = () => {
+       localStorage.setItem('message', message.value)
+    };
+    </script>
     <!--Our JavaScript page-->
     <script defer src="./assets/script.js"></script>
 </body>
