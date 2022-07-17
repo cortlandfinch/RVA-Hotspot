@@ -94,4 +94,10 @@ brew6.innerHTML = `<div class="bg_carousel" id="brew6">
 }
 getBrew();
 
-// save form to local storage
+// mobile burger menu for navbar
+const burgerIcon = document.querySelector('#burger');
+const navbarMenu = document.querySelector('#nav-links');
+
+burgerIcon.addEventListener('click', () => {
+  navbarMenu.classList.toggle('is-active');
+});

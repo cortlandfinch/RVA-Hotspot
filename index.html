@@ -31,27 +31,35 @@
 <body>
     <header>
         <!--Nav bar from bulma-->
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <div class="navbar-brand">
-              <img class="navbar-item" src="./assets/logo white.png" width="112" height="28">
-            </img>
-            <div id="navbarBasicExample" class="navbar-menu">
-              <div class="navbar-start">
-                <!--hrefs link these nav buttons to each section-->
-                <a href="#restaurants" class="navbar-item">
-                  Food
-                </a>
-          
-                <a href="#breweries" class="navbar-item">
-                  Booze
-                </a>
-          
-                <a href="#contact-us" class="navbar-item">
-                    Contact Us
-                </a>
-                </div>
-            </div>
-          </nav> 
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a href="https://rockwoodc.github.io/RVA-Hotspot/">
+      <img src="./assets/logo white.png" width="112" height="28">
+    </a>
+
+    <a id="burger" class="navbar-burger" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="nav-links" class="navbar-menu">
+    <div class="navbar-end">
+      <a href="#restaurants" class="navbar-item">
+        Food
+      </a>
+
+      <a href="#breweries" class="navbar-item">
+        Booze
+      </a>
+
+      <a href="#contact-us" class="navbar-item">
+        Contact Us
+      </a>
+    </div>
+  </div>
+</nav>
     </header>
     <hero>
         <!-- hero styling from bulma- mb-5 gives a margin at the bottom between the hero and the next section-->
